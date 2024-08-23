@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ukasha Meer - Web Developer</title>
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "Zei87Y7AbEWFND8Jt",
+        });
+      })();
+    </script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Loading -->
+    <div id="loading">
+      <svg
+        version="1.1"
+        id="L6"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        x="0px"
+        y="0px"
+        viewBox="0 0 100 100"
+        enable-background="new 0 0 100 100"
+        xml:space="preserve"
+      >
+        <rect
+          fill="none"
+          stroke="#000"
+          stroke-width="4"
+          x="25"
+          y="25"
+          width="50"
+          height="50"
+        >
+          <animateTransform
+            attributeName="transform"
+            dur="0.8s"
+            from="0 50 50"
+            to="180 50 50"
+            type="rotate"
+            id="strokeBox"
+            attributeType="XML"
+            begin="rectBox.end"
+          />
+        </rect>
+        <rect x="27" y="27" fill="#000" width="46" height="50">
+          <animate
+            attributeName="height"
+            dur="0.8s"
+            attributeType="XML"
+            from="50"
+            to="0"
+            id="rectBox"
+            fill="freeze"
+            begin="0s;strokeBox.end"
+          />
+        </rect>
+      </svg>
+      <h1>Loading...</h1>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="top-bar"></div>
+      <div class="hero-left-side">
+        <video src="videos/gradient-bg.mp4" loop autoplay muted></video>
+        <header>
+          <h4 class="logo">Ukasha<br />Meer</h4>
+          <svg
+            class="svg-corner logo-top-left"
+            width="30"
+            height="30"
+            viewBox="0 0 30 30"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g clip-path="url(#clip0_310_2)">
+              <path
+                d="M30 0H0V30C0 13.431 13.431 0 30 0Z"
+                fill="#F9F8F6"
+              ></path>
+            </g>
+            <defs>
+              <clipPath id="clip0_310_2">
+                <rect width="30" height="30" fill="white"></rect>
+              </clipPath>
+            </defs>
+          </svg>
+          <svg
+            class="svg-corner logo-bottom-left"
+            width="30"
+            height="30"
+            viewBox="0 0 30 30"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g clip-path="url(#clip0_310_2)">
+              <path
+                d="M30 0H0V30C0 13.431 13.431 0 30 0Z"
+                fill="#F9F8F6"
+              ></path>
+            </g>
+            <defs>
+              <clipPath id="clip0_310_2">
+                <rect width="30" height="30" fill="white"></rect>
+              </clipPath>
+            </defs>
+          </svg>
+          <nav class="nav">
+            <ul class="menu">
+              <li><a href="#project">Projects</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#skill">Skills</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="menu-btn">
+              <i onclick="ToggleMenu()" class="ri-menu-line"></i>
+            </div>
+          </nav>
+        </header>
+        <div class="hero-left-side-content">
+          <div class="hero-left-side-content-box">
+            <h1>
+              <span>Web Expert</span> <br />
+              Creating High-Quality Websites
+            </h1>
+          </div>
+          <a href="#project" class="download"
+            ><img src="images/download.svg" alt=""
+          /></a>
+          <svg
+            class="svg-corner main-top-left"
+            width="30"
+            height="30"
+            viewBox="0 0 30 30"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g clip-path="url(#clip0_310_2)">
+              <path
+                d="M30 0H0V30C0 13.431 13.431 0 30 0Z"
+                fill="#F9F8F6"
+              ></path>
+            </g>
+            <defs>
+              <clipPath id="clip0_310_2">
+                <rect width="30" height="30" fill="white"></rect>
+              </clipPath>
+            </defs>
+          </svg>
+          <svg
+            class="svg-corner main-bottom-right"
+            width="30"
+            height="30"
+            viewBox="0 0 30 30"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g clip-path="url(#clip0_310_2)">
+              <path
+                d="M30 0H0V30C0 13.431 13.431 0 30 0Z"
+                fill="#F9F8F6"
+              ></path>
+            </g>
+            <defs>
+              <clipPath id="clip0_310_2">
+                <rect width="30" height="30" fill="white"></rect>
+              </clipPath>
+            </defs>
+          </svg>
+        </div>
+      </div>
+      <div class="hero-right-side">
+        <div class="top-slider-container">
+          <div class="slider">
+            <div class="slide">
+              <h2>15+</h2>
+              <p>
+                Clients served <br />
+                this week.
+              </p>
+            </div>
+            <div class="slide">
+              <h2>25+</h2>
+              <p>
+                Cups of coffee <br />
+                consumed this week.
+              </p>
+            </div>
+            <div class="slide">
+              <h2>10K+</h2>
+              <p>
+                Lines of code were <br />
+                written this week.
+              </p>
+            </div>
+            <div class="slide">
+              <h2>42+</h2>
+              <p>
+                Bugs Squashed and <br />
+                resolved this week.
+              </p>
+            </div>
+            <div class="slide">
+              <h2>7+</h2>
+              <p>
+                Innovations delivered <br />
+                this week
+              </p>
+            </div>
+          </div>
+          <div class="tracker">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+        </div>
+        <div class="hero-right-bottom">
+          <img src="images/profile-1.jpg" alt="" />
+          <audio src="videos/real_1.mp3" id="soundHover"></audio>
+          <a
+            href="assets/Ukasha Meer.pdf"
+            download="Ukasha Meer.pdf"
+            class="star-button"
+            onmouseover="playMeme()"
+            onmouseout="stopMeme()"
+          >
+            <span class="left">✦</span>
+            Download Resume
+            <span class="right">✦</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects-section" id="project">
+      <div class="projects-container">
+        <h4 class="section-heading">SELECTED WORK</h4>
+        <div class="projects-list">
+          <a
+            href="https://billzstore.com/"
+            target="_blank"
+            class="project-item"
+          >
+            <h6>Ecommerce Wordpress Website</h6>
+            <h2>Billzstore</h2>
+            <span></span>
+          </a>
+          <a
+            href="https://prime-five-alpha.vercel.app/"
+            target="_blank"
+            class="project-item"
+          >
+            <h6>Agency Website</h6>
+            <h2>Prime</h2>
+            <span></span>
+          </a>
+          <a
+            href="https://w3master.co.uk/wp-working/"
+            target="_blank"
+            class="project-item"
+          >
+            <h6>Online Events Website</h6>
+            <h2>W3master</h2>
+            <span></span>
+          </a>
+          <a
+            href="https://carlazbell.com/"
+            target="_blank"
+            class="project-item"
+          >
+            <h6>Real State Website</h6>
+            <h2>Carlazbell</h2>
+            <span></span>
+          </a>
+          <div class="project-item">
+            <h6>Comming Soon</h6>
+            <h2>Beast</h2>
+            <span></span>
+          </div>
+          <a
+            href="https://github.com/UkashaMeer"
+            target="_blank"
+            class="project-item"
+          >
+            <h6>See more on</h6>
+            <h2>GitHub</h2>
+            <span></span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-section" id="about">
+      <div class="about-container">
+        <div class="about-left">
+          <div class="img-box">
+            <img src="images/profile-1.jpg" alt="" />
+          </div>
+        </div>
+        <div class="about-content">
+          <h3>
+            I'm a web <strong>developer</strong> &
+            <strong>designer</strong> based in Pakistan! With
+            <strong>4 years </strong> of experience, I specialize in creating
+            stunning, high-performance websites using
+            <strong>clean code </strong> and <strong> modern design.</strong>
+          </h3>
+          <a
+            href="#contact"
+            class="star-button"
+            onmouseover="playMeme()"
+            onmouseout="stopMeme()"
+          >
+            <span class="left">✦</span>
+            Get in touch
+            <span class="right">✦</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <div class="skills-section" id="skill">
+      <div class="skills-container">
+        <h4 class="section-heading">SKILLS & SERVICES</h4>
+        <div class="skills-list">
+          <div class="skill-item">
+            <h2>Web</h2>
+            <div class="video">
+              <video src="videos/web_develop.mp4" autoplay loop muted></video>
+            </div>
+            <h2>development</h2>
+          </div>
+          <div class="skill-item">
+            <h2>Web</h2>
+            <div class="video">
+              <video
+                src="videos/interface_design.mp4"
+                autoplay
+                loop
+                muted
+              ></video>
+            </div>
+            <h2>designing</h2>
+          </div>
+          <div class="skill-item">
+            <h2>3d web</h2>
+            <div class="video">
+              <video
+                src="videos/3d_web_experiences.mp4"
+                autoplay
+                loop
+                muted
+              ></video>
+            </div>
+            <h2>designing</h2>
+          </div>
+          <div class="skill-item">
+            <h2>Creative</h2>
+            <div class="video">
+              <video
+                src="videos/creative_coding.mp4"
+                autoplay
+                loop
+                muted
+              ></video>
+            </div>
+            <h2>coding</h2>
+          </div>
+          <div class="skill-item">
+            <h2>Web</h2>
+            <div class="video">
+              <video
+                src="videos/solid_engineering.mp4"
+                autoplay
+                loop
+                muted
+              ></video>
+            </div>
+            <h2>engineering</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact-section" id="contact">
+      <div class="contact-container">
+        <video src="videos/gradient-bg.mp4" loop autoplay muted></video>
+        <div class="contact-content">
+          <h2 class="section-heading">
+            Let’s build something <br /><strong>amazing</strong> together.
+          </h2>
+          <form action="">
+            <div class="input">
+              <span class="left">✦</span>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                required
+                placeholder="Enter Full Name"
+              />
+              <span class="right">✦</span>
+            </div>
+            <div class="input">
+              <span class="left">✦</span>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                required
+                placeholder="Enter Email"
+              />
+              <span class="right">✦</span>
+            </div>
+            <div class="message">
+              <textarea
+                name="message"
+                id="message"
+                placeholder="Enter your ideas here"
+                required
+              ></textarea>
+            </div>
+            <a
+              href="#contact"
+              class="star-button"
+              type="submit"
+              onclick="sendMail()"
+              onmouseover="playMeme()"
+              onmouseout="stopMeme()"
+            >
+              <span class="left">✦</span>
+              Send me
+              <span class="right">✦</span>
+            </a>
+            <div class="icons">
+              <a href="https://www.linkedin.com/in/muhammad-ukasha-975a85318/" target="_blank"><i class="ri-linkedin-line"></i></a>
+              <a href="https://github.com/UkashaMeer" target="_blank"><i class="ri-github-line"></i></a>
+              <a href="https://web.facebook.com/profile.php?id=61553737201788" target="_blank"><i class="ri-facebook-line"></i></a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
