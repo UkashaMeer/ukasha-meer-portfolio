@@ -83,6 +83,11 @@ body{
     font-weight: 500;
 }
 
+@media (max-width: 768px){
+    #loading h1{
+        display: none;
+    }
+}
 
 .top-bar{
     height: 10px;
@@ -583,6 +588,7 @@ nav ul li a:hover{
     padding: 0 200px 0 150px;
     width: 100%;
     margin-bottom: 150px;
+    overflow: hidden;
 }
 
 .about-container{
@@ -707,6 +713,7 @@ nav ul li a:hover{
     position: relative;
     padding: 0 20px;
     margin-bottom: 150px;
+    overflow: hidden;
 }
 
 .skills-container{
@@ -817,6 +824,7 @@ nav ul li a:hover{
     margin-bottom: 40px;
     position: relative;
     width: 100%;
+    overflow: hidden;
 }
 
 .contact-container{
